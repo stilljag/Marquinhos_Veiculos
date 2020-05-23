@@ -18,21 +18,18 @@ module.exports={
      return response.json ({id,n_fab});
   },  
   
-  /**EXCLUIR FABRICANTE */
-  
+  /**EXCLUIR FABRICANTE */  
   async delete(request,response){
-    const { id }=request.params;
-    
-
+    const { id }=request.params; 
     const fabricante=await connection('fabricante')
      .where('id',id)
-     .select('n_fab')
-     .first();
-     
-    
-  
-   await connection('fabricante').where('id',id).delete();
+     .select('id')
+     .first();          
 
+    
+   await connection('fabricante').where('id',id).delete();
+   
+   
    return response.status(204).send();
 
   } 

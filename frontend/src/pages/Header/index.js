@@ -6,8 +6,9 @@ import logoImg from '../../assets/logo.jpg';
 import bannerImg from '../../assets/marquinhosveiculos.jpg';
 import carro1Img from '../../assets/carro1.jpeg';
 
-export default function Logon() {
-
+export default function Header() {
+  /**ad */
+  
   return (
     <div className="container">
       <section className="form">
