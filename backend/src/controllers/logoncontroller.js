@@ -12,13 +12,13 @@ module.exports={
 
   /**CADASTRAR  usuario */
   async create(request, response){
-    const {id,name, password} =request.body;    
+    const {id,name, senha} =request.body;    
 
     
     await connection('logon').insert({
       id,
       name,
-      password,
+      senha,
     })
    
      return response.json ({name});

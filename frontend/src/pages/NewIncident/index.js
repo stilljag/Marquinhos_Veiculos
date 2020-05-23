@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import React,{useState} from 'react';
 
+import {useHistory} from 'react-router-dom';
 import api from '../../services/api';
+
 
 import './styles.css';
 
@@ -21,7 +22,7 @@ export default function NewIncident() {
 
   const history = useHistory();
 
-  const ongId = localStorage.getItem('ongId');
+  const id = localStorage.getItem('id');
 
   async function handleNewIncident(e) {
     e.preventDefault();
@@ -42,7 +43,7 @@ export default function NewIncident() {
     try {
       await api.post('incidents', data, {
         headers: {
-          Authorization: ongId,
+          Authorization: id,
         }
       })
 

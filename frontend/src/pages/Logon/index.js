@@ -16,12 +16,12 @@ export default function Logon() {
     e.preventDefault();
 
     try {
-      const response = await api.post('sessions', { id });
+      const response = await api.post('logon', { id });
 
-      localStorage.setItem('ongId', id);
-      localStorage.setItem('ongName', response.data.name);
+      localStorage.setItem('id', id);
+      localStorage.setItem('name', response.data.name);
 
-      history.push('/profile');
+      history.push('/incidents/new');
     } catch (err) {
       alert('Falha no login, tente novamente.');
     }

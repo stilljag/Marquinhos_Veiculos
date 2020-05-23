@@ -6,8 +6,12 @@ const fabricantecontroller=require('./controllers/fabricantecontroller');
 const modelocontroller=require('./controllers/modelocontroller');
 const combustivelcontroller=require('./controllers/combustivelcontroller');
 const veiculoscontroller=require('./controllers/veiculoscontroller');
+const sessioncontroller=require('./controllers/sessioncontroller');
 
 const routes = express.Router();
+/**LOGIN */
+routes.post('/logon', sessioncontroller.create);
+
 /*Lista usuarios cadastrados*/
 routes.get('/cadastro', logoncontroller.index);
 /**CADASTRA usuario */
