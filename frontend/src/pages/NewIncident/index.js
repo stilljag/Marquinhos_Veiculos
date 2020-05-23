@@ -119,7 +119,7 @@ export default function NewIncident() {
           />
 
           <textarea
-            placeholder="Obsercações"
+            placeholder="Observações"
             value={observacoes}
             onChange={e => setObservacoes(e.target.value)}
           />
