@@ -97,6 +97,95 @@
     margin-top: 5px;
   }
 
+  section.contato h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #212121;
+    border-bottom: #F4CB2F 3px solid;
+    margin: 0;
+    width: 290px;
+    margin: 20px auto 0 auto;
+  }
+
+  section.contato form{
+    width: 600px;
+    height: 500px;
+    margin: 30px auto 0 auto;
+    background-color: #c2c1b8;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+    color: #212121;
+  }
+
+  .form-wraper{
+    float: left;
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
+  .w100{
+    width: 100%;
+  }
+
+  .w50{
+    width: 50%;
+  }
+  .form-wraper span{
+    font-size: 24px;
+    color: #212121;
+  }
+  .form-wraper input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+  }
+  .form-wraper textarea{
+    width: 100%;
+    height: 121px;
+    padding: 8px;
+    resize: none;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+  }
+
+  section.contato .center{
+    text-align: center;
+  }
+
+  section.contato input[type=submit]{
+    width: 120px;
+    height: 35px;
+    border: 0;
+    background-color: #212121;
+    color: white;
+    cursor: pointer;
+  }
+
+  section.footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: #212121;
+    border-top: #F4CB2F solid 3px;
+    text-align: center;
+  }
+
+  section.footer .single-footer{
+    float: left;
+    width: 31%;
+    margin-top: 10px;
+    margin-left: 2%;
+  }
+
+
+
 
 
 

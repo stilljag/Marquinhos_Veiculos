@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import { FiArrowLeft } from 'react-icons/fi'
+import { useHistory } from 'react-router-dom';
 
 import api from '../../services/api';
 
 import './styles.css';
 
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/logo.jpg';
 
 export default function NewIncident() {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [value, setValue] = useState('');
+  const [fabricante, setFabricante] = useState('');
+  const [modelo, setModelo] = useState('');
+  const [placa, setPlaca] = useState('');
+  const [estado, setEstado] = useState('');
+  const [portas, setPortas] = useState('');
+  const [combustivel, setCombustivel] = useState('');
+  const [observacoes, setObservacoes] = useState('');
+  const [valor, setValor] = useState('');
+  const [kilometragem, setKilometragem] = useState('');
+  const [ano, setAno] = useState('');
 
   const history = useHistory();
 
@@ -21,9 +27,16 @@ export default function NewIncident() {
     e.preventDefault();
 
     const data = {
-      title,
-      description,
-      value,
+      fabricante,
+      modelo,
+      placa,
+      estado, 
+      portas,
+      combustivel,
+      observacoes,
+      valor, 
+      kilometragem,
+      ano,
     };
 
     try {
@@ -43,34 +56,71 @@ export default function NewIncident() {
     <div className="new-incident-container">
       <div className="content">
         <section>
-          <img src={logoImg} alt="Be The Hero"/>
+          <img src={logoImg} alt="Marquinhos Veículos"/>
 
-          <h1>Cadastrar novo caso</h1>
-          <p>Descreva o caso detalhadamente para encontrar um herói para resolver isso.</p>
+          <h1>Cadastre seus novos veículos</h1>
 
-          <Link className="back-link" to="/profile">
-            <FiArrowLeft size={16} color="#E02041" />
-            Voltar para home
-          </Link>
         </section>
 
         <form onSubmit={handleNewIncident}>
           <input 
-            placeholder="Título do caso"
-            value={title}
-            onChange={e => setTitle(e.target.value)}
-          />
-
-          <textarea 
-            placeholder="Descrição"
-            value={description}
-            onChange={e => setDescription(e.target.value)}
+            placeholder="Fabricante"
+            value={fabricante}
+            onChange={e => setFabricante(e.target.value)}
           />
 
           <input 
-            placeholder="Valor em reais"
-            value={value}
-            onChange={e => setValue(e.target.value)}
+            placeholder="Modelo"
+            value={modelo}
+            onChange={e => setModelo(e.target.value)}
+          />
+
+          <input className="w50"
+            placeholder="Placa"
+            value={placa}
+            onChange={e => setPlaca(e.target.value)}
+          />
+
+          <input className="w50"
+            placeholder="Combustível"
+            value={combustivel}
+            onChange={e => setCombustivel(e.target.value)}
+          />
+
+          <input 
+            placeholder="Estado"
+            value={estado}
+            onChange={e => setEstado(e.target.value)}
+          />
+
+          <input className="w50"
+            placeholder="Portas"
+            value={portas}
+            onChange={e => setPortas(e.target.value)}
+          />
+
+          <input className="w50"
+            placeholder="Valor"
+            value={valor}
+            onChange={e => setValor(e.target.value)}
+          />
+
+          <input className="w50"
+            placeholder="Ano"
+            value={ano}
+            onChange={e => setAno(e.target.value)}
+          />
+
+          <input className="w50"
+            placeholder="kilometragem"
+            value={kilometragem}
+            onChange={e => setKilometragem(e.target.value)}
+          />
+
+          <textarea
+            placeholder="Obsercações"
+            value={observacoes}
+            onChange={e => setObservacoes(e.target.value)}
           />
 
           <button className="button" type="submit">Cadastrar</button>
