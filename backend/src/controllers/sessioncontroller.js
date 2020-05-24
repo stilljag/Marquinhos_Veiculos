@@ -3,10 +3,10 @@ const connection=require('../database/connection');
 
 module.exports={
   async create(request,response){
-    const {id}=request.body;
+    const {id_logon}=request.body;
 
     const logon=await connection('logon')
-      .where('id',id)
+      .where('id_logon',id_logon)
       .select('name')
       .first();
 

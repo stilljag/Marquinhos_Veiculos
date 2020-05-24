@@ -5,24 +5,19 @@ module.exports={
 
   /**LISTA usuario */
   async index(request, response ){
-    const logon=await connection('logon').select('*');
-  
+    const logon=await connection('logon').select('*');  
     return response.json(logon);
   },
 
   /**CADASTRAR  usuario */
   async create(request, response){
-    const {id,name, senha} =request.body;    
-
-    
+    const {id_logon,name, senha} =request.body;        
     await connection('logon').insert({
-      id,
+      id_logon,
       name,
       senha,
-    })
-   
-     return response.json ({name});
-  },     
-
+    })   
+      return response.json ({name});
+  }, 
   
 };

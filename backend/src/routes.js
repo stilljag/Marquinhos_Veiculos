@@ -7,13 +7,16 @@ const modelocontroller=require('./controllers/modelocontroller');
 const combustivelcontroller=require('./controllers/combustivelcontroller');
 const veiculoscontroller=require('./controllers/veiculoscontroller');
 const sessioncontroller=require('./controllers/sessioncontroller');
+const profilecontroller=require('./controllers/profilecontroller');
 
 const routes = express.Router();
 /**LOGIN */
 routes.post('/logon', sessioncontroller.create);
 
+
 /*Lista usuarios cadastrados*/
 routes.get('/cadastro', logoncontroller.index);
+routes.post('/session', sessioncontroller.create);
 /**CADASTRA usuario */
 routes.post('/cadastro',logoncontroller.create);
 
@@ -39,9 +42,13 @@ routes.post('/combustivel',combustivelcontroller.create);
 routes.delete('/combustivel/:id',combustivelcontroller.delete);
 
 /*Lista veiculos cadastrados*/
-
-/**CADASTRA usuario */
+routes.get('/veiculos',veiculoscontroller.index);
+/**CADASTRA veiculos */
 routes.post('/veiculos',veiculoscontroller.create);
+/**DELETA VEICULOS*/
+routes.delete('/veiculos/:id',veiculoscontroller.delete); 
+/**LISTA ESPECIFICA */
+routes.get('/profile', profilecontroller.index);
 
 
 module.exports= routes;

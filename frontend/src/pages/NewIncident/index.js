@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-
 import {useHistory} from 'react-router-dom';
 import api from '../../services/api';
 
@@ -8,22 +7,22 @@ import './styles.css';
 
 import logoImg from '../../assets/logo.jpg';
 
-export default function NewIncident() {
+export default function NewIncident() {  
   const [fabricante, setFabricante] = useState('');
   const [modelo, setModelo] = useState('');
   const [placa, setPlaca] = useState('');
   const [estado, setEstado] = useState('');
   const [portas, setPortas] = useState('');
   const [combustivel, setCombustivel] = useState('');
-  const [observacoes, setObservacoes] = useState('');
+  const [obs, setObs] = useState('');
   const [valor, setValor] = useState('');
-  const [kilometragem, setKilometragem] = useState('');
+  const [km, setKm] = useState('');
   const [ano, setAno] = useState('');
 
   const history = useHistory();
-
-  const id = localStorage.getItem('id');
-
+  const id_logon=localStorage.getItem('id_logon');
+  const logon_id=id_logon;
+    
   async function handleNewIncident(e) {
     e.preventDefault();
 
@@ -34,19 +33,19 @@ export default function NewIncident() {
       estado, 
       portas,
       combustivel,
-      observacoes,
+      obs,
       valor, 
-      kilometragem,
+      km,
       ano,
+      logon_id,
     };
 
     try {
-      await api.post('incidents', data, {
-        headers: {
-          Authorization: id,
+      await api.post('veiculos', data, {     
+        headers:{
+          authorization:id_logon,          
         }
-      })
-
+      });
       history.push('/profile');
     } catch (err) {
       alert('Erro ao cadastrar caso, tente novamente.');
@@ -114,17 +113,18 @@ export default function NewIncident() {
 
           <input className="w50"
             placeholder="kilometragem"
-            value={kilometragem}
-            onChange={e => setKilometragem(e.target.value)}
+            value={km}
+            onChange={e => setKm(e.target.value)}
           />
 
           <textarea
             placeholder="Observações"
-            value={observacoes}
-            onChange={e => setObservacoes(e.target.value)}
+            value={obs}
+            onChange={e => setObs(e.target.value)}
           />
-
           <button className="button" type="submit">Cadastrar</button>
+          
+
         </form>
       </div>
     </div>

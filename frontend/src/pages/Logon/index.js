@@ -9,23 +9,21 @@ import './styles.css';
 import logoImg from '../../assets/logo.jpg';
 
 export default function Logon() {
-  const [id, setId] = useState('');
+  const [id_logon, setId_logon] = useState('');
   const history = useHistory();
 
   async function handleLogin(e) {
     e.preventDefault();
 
     try {
-      const response = await api.post('logon', { id });
-
-      localStorage.setItem('id', id);
-      localStorage.setItem('name', response.data.name);
-
-      history.push('/incidents/new');
+        const response = await api.post('logon', { id_logon });
+        localStorage.setItem('id_logon', id_logon);
+        localStorage.setItem('name', response.data.name);  
+        history.push('/profile');
     } catch (err) {
-      alert('Falha no login, tente novamente.');
+        alert('Falha no login, tente novamente.');
     }
-  }
+  }   
 
   return (
     <div className="logon-container">
@@ -36,8 +34,8 @@ export default function Logon() {
 
           <input 
             placeholder="Senha"
-            value={id}
-            onChange={e => setId(e.target.value)}
+            value={id_logon}
+            onChange={e => setId_logon(e.target.value)}
           />
 
           <button className="button" type="submit">Entrar</button>
