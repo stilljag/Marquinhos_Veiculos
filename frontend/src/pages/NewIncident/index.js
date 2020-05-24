@@ -18,10 +18,16 @@ export default function NewIncident() {
   const [valor, setValor] = useState('');
   const [km, setKm] = useState('');
   const [ano, setAno] = useState('');
+  /** <input 
+            placeholder="Carregar Imagem"
+            value={url}
+            onChange={e => setUrl(e.target.value)}
+          /> */
 
   const history = useHistory();
   const id_logon=localStorage.getItem('id_logon');
   const logon_id=id_logon;
+  
     
   async function handleNewIncident(e) {
     e.preventDefault();
@@ -38,15 +44,18 @@ export default function NewIncident() {
       km,
       ano,
       logon_id,
-    };
+    };    
 
     try {
       await api.post('veiculos', data, {     
         headers:{
           authorization:id_logon,          
         }
-      });
+      });     
+     
       history.push('/profile');
+      
+      /*document.location.reload();*/
     } catch (err) {
       alert('Erro ao cadastrar caso, tente novamente.');
     }
@@ -115,13 +124,14 @@ export default function NewIncident() {
             placeholder="kilometragem"
             value={km}
             onChange={e => setKm(e.target.value)}
-          />
+          />                    
 
           <textarea
             placeholder="Observações"
             value={obs}
             onChange={e => setObs(e.target.value)}
           />
+         
           <button className="button" type="submit">Cadastrar</button>
           
 
