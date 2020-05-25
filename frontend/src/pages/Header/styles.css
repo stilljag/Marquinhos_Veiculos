@@ -44,16 +44,16 @@
 .container section.banner img{
   width: 100%;
   height: 520px;
-  border:solid red 3px
+  /*border:solid red 3px*/
 }
 
 .container section.novidades{
   margin: 0 auto;
-  border:solid blue 3px;  
+  /*border:solid blue 3px;  */
 } 
 
 .container section.novidades h1{
-  border: springgreen solid 3px;
+  /*border: springgreen solid 3px;*/
   text-align: center;
   font-size: 30px;
   font-weight: lighter;
@@ -68,13 +68,13 @@
 }
 
 /*INICIO DA AREA DE CARROS*/
-.container section.novidades{  
+/*.container section.novidades{  
   border:solid black 3px
-} 
+} */
 
 .container section.novidades .single-car{
   
-  border: solid yellow 3px;
+  /*border: solid yellow 3px;*/
  float: block;
   
   width: 100%;
@@ -102,7 +102,7 @@
   }
   .container section.novidades .single-car ul {
     width: 100%;
-    border: chartreuse solid 4px;
+    /*border: chartreuse solid 4px;*/
     margin-top: 5px;
     cursor: pointer;
     /*dividisor*/
@@ -112,10 +112,10 @@
     list-style: none;
    
   }
-  .container section.novidades .single-car ul li {
-   border: tomato solid 3px;
+/*  .container section.novidades .single-car ul li {
+   /*border: tomato solid 3px;
 
-  }
+  }*/
 
 
   .container section.novidades .single-car h3{
@@ -128,7 +128,7 @@
 /*FIM DA AREA DE CARROS*/
   
   section.contato h2{
-    border: blueviolet solid 3px;
+    /*border: blueviolet solid 3px;*/
     width: 100%;
     padding-top: 20px;      
     text-align: center;

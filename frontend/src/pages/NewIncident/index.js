@@ -54,6 +54,8 @@ export default function NewIncident() {
       });     
      
       history.push('/profile');
+     
+      
       
       /*document.location.reload();*/
     } catch (err) {
