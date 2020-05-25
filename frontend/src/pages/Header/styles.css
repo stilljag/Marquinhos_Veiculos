@@ -2,45 +2,6 @@
 	clear: both;
 }
 
-.container section.form{  
-  width: 100%;
-  height: 160px;
-  background-color: #212121;
-  border-bottom: #F4CB2F solid 3px;
-}
-
-.container section.form .header img{
-  width: 150px;
-  height: 130px;
-  float: left;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-.container section.form .header ul{
-  padding: 8px 0;
-  list-style-type: none;
-  float: right;
-}
-
-.container section.form .header ul li{
-  float: left;
-	font-size: 20px;
-  margin-top: 30px;
-  padding: 30px;
-  text-transform: uppercase;
-}
-
-.container section.form .header ul li a{
-  color:#F5F5F5;
-  text-decoration: none;
-}
-
-.container section.form .header ul li a:hover{
-  border-bottom: #F4CB2F 3px solid;
-}
-
 .container section.banner img{
   width: 100%;
   height: 520px;
@@ -70,15 +31,14 @@ section.novidades{
 }
 
 .container section.novidades .single-car{
-  width: 32%;
+  width: 30%;
   float: left;
-  margin-left: 10px;
+  margin: 17px 20px 0 20px;
   text-align: center;
   -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
   -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
   color: #212121;
-  margin-top: 10px;
   }
 
   .container section.novidades .single-car:last-child{
@@ -99,9 +59,10 @@ section.novidades{
     width: 100%;
     margin-top: 5px;
     cursor: pointer;
+    list-style: none;
   }
   .container section.novidades .single-car ul li {
-
+    
 
   }
 
@@ -191,7 +152,7 @@ section.novidades{
   section.footer{
     margin-top: 20px;
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-color: #212121;
     border-top: #F4CB2F solid 3px;
     text-align: center;
@@ -204,6 +165,20 @@ section.novidades{
     margin-left: 2%;
   }
 
+  section.footer .single-footer h2{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #c2c1b8;
+  }
+
+  section.footer .single-footer p{
+    color: #c2c1b8;
+  }
+
+  .redes-sociais{
+    margin: 5px;
+    padding-top: 20px;
+  }
 
 
 

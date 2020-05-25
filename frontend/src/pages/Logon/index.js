@@ -26,24 +26,31 @@ export default function Logon() {
   }   
 
   return (
-    <div className="logon-container">
-      <section className="classe">
-
-        <form onSubmit={handleLogin}>
-          <h1>Seja bem-vindo Marquinhos, digite sua sua senha</h1>
-
-          <input 
-            placeholder="Senha"
-            value={id_logon}
-            onChange={e => setId_logon(e.target.value)}
-          />
-
-          <button className="button" type="submit">Entrar</button>
-        </form>
-        <div className="img-perfil">
+    <div className="container">
+      <section className="form" id="home">
+        <div className="header">
           <img src={logoImg} alt="Marquinhos Veículos"/>
         </div>
       </section>
+      <div className="logo-container">
+        <section className="classe">
+
+          <form onSubmit={handleLogin}>
+            <h1>Seja bem-vindo Marquinhos, digite sua sua senha</h1>
+
+            <input 
+              placeholder="Senha"
+              value={id_logon}
+              onChange={e => setId_logon(e.target.value)}
+            />
+
+            <button className="button" type="submit">Entrar</button>
+          </form>
+          <div className="img-perfil"></div>
+        </section>
+      </div>
+      <div className="clear"></div>
+      <section className="footer" />
     </div>
   );
 }

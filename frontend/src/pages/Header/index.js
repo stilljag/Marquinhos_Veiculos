@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
 
 import api from '../../services/api';
 
@@ -65,8 +67,6 @@ export default function Header() {
         ))}
       </section>
       
-
-      
       <section className="contato">
         <h2>Entre em contato</h2>
         <form>
@@ -100,11 +100,20 @@ export default function Header() {
         <div className="single-footer">
           <h2>Endereço:</h2>
           <p>Rua General Osório, n° 475</p>
+          <p>São Lourenço do Sul/RS</p>
           <p>Cep: 961700-000</p>
         </div>
         <div className="single-footer">
           <h2>Redes Sociais:</h2>
-          <p>Icons</p>
+          <Link className="redes-sociais">
+            <FiFacebook size={20} color="blue" />
+          </Link>
+          <Link className="redes-sociais">
+            <FiInstagram size={20} color="blue" />
+          </Link>
+          <Link className="redes-sociais">
+            <FiTwitter size={20} color="blue" />
+          </Link>
         </div>
       </section>
     </div>
