@@ -44,16 +44,25 @@
 .container section.banner img{
   width: 100%;
   height: 520px;
+<<<<<<< HEAD
   /*border:solid red 3px*/
+=======
+>>>>>>> a6aa80ee3da16ba205082d85f3e3697d5ce45cfa
 }
 
 .container section.novidades{
   margin: 0 auto;
+<<<<<<< HEAD
   /*border:solid blue 3px;  */
 } 
 
 .container section.novidades h1{
   /*border: springgreen solid 3px;*/
+=======
+} 
+
+.container section.novidades h1{
+>>>>>>> a6aa80ee3da16ba205082d85f3e3697d5ce45cfa
   text-align: center;
   font-size: 30px;
   font-weight: lighter;
@@ -61,13 +70,12 @@
   text-transform: uppercase;
   color: #212121;
   border-bottom: #F4CB2F 3px solid;
-  margin: 0;
   width: 420px;
   margin: 20px auto 0 auto;
-  
 }
 
 /*INICIO DA AREA DE CARROS*/
+<<<<<<< HEAD
 /*.container section.novidades{  
   border:solid black 3px
 } */
@@ -80,11 +88,24 @@
   width: 100%;
  margin-left: 0 auto;
   
+=======
+section.novidades{
+  width: 98%;
+  height: 670px;
+  background-color:#c2c1b8;
+}
+
+.container section.novidades .single-car{
+  width: 32%;
+  float: left;
+  margin-left: 10px;
+>>>>>>> a6aa80ee3da16ba205082d85f3e3697d5ce45cfa
   text-align: center;
   -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
   -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
   color: #212121;
+  margin-top: 10px;
   }
 
   .container section.novidades .single-car:last-child{
@@ -92,8 +113,9 @@
   }
 
   .container section.novidades .single-car img{
-    width: 80%;
+    width: 100%;
     max-height: 220px;
+    margin-top: -5px;
   }
 
   .container section.novidades .single-car h2{
@@ -102,18 +124,20 @@
   }
   .container section.novidades .single-car ul {
     width: 100%;
+<<<<<<< HEAD
     /*border: chartreuse solid 4px;*/
+=======
+>>>>>>> a6aa80ee3da16ba205082d85f3e3697d5ce45cfa
     margin-top: 5px;
     cursor: pointer;
-    /*dividisor*/
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    list-style: none;
-   
   }
+<<<<<<< HEAD
 /*  .container section.novidades .single-car ul li {
    /*border: tomato solid 3px;
+=======
+  .container section.novidades .single-car ul li {
+
+>>>>>>> a6aa80ee3da16ba205082d85f3e3697d5ce45cfa
 
   }*/
 
@@ -128,7 +152,10 @@
 /*FIM DA AREA DE CARROS*/
   
   section.contato h2{
+<<<<<<< HEAD
     /*border: blueviolet solid 3px;*/
+=======
+>>>>>>> a6aa80ee3da16ba205082d85f3e3697d5ce45cfa
     width: 100%;
     padding-top: 20px;      
     text-align: center;
@@ -145,12 +172,12 @@
   section.contato form{
     width: 600px;
     height: 500px;
-    margin: 30px auto 0 auto;
-    background-color: #c2c1b8;
+    margin: 0 auto;
+    background-color: #212121;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
-    color: #212121;
+    border-radius: 10px;
   }
 
   .form-wraper{
@@ -168,7 +195,7 @@
   }
   .form-wraper span{
     font-size: 24px;
-    color: #212121;
+    color: #c2c1b8;
   }
   .form-wraper input[type=text]{
     width: 100%;
@@ -195,9 +222,10 @@
     width: 120px;
     height: 35px;
     border: 0;
-    background-color: #212121;
+    background-color: #c2c1b8;
     color: white;
     cursor: pointer;
+    border-radius: 20px;
   }
 
   section.footer{
