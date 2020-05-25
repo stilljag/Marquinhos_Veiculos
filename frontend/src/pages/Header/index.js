@@ -52,21 +52,20 @@ export default function Header() {
       <section className="novidades" id="novidades"> 
         <h1>Confira nossas Novidades</h1>
         
-        <div className="single-car" id='update'>     
-            <ul>
-              
-              {veiculos.map(veiculo => (
-                <li key={veiculo.id}>
-                  <img src={carro1Img} alt="Marquinhos Veículos"/>
-                  <h2>{veiculo.fabricante} {veiculo.modelo}.</h2>
+        {veiculos.map(veiculo => (
+          <div className="single-car" id='update'>     
+              <ul>
+                  <li key={veiculo.id}>
+                    <img src={carro1Img} alt="Marquinhos Veículos"/>
+                    <h2>{veiculo.fabricante} {veiculo.modelo}.</h2>
 
-                  <h3> {Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(veiculo.valor)}</h3>
-                  
-                  <p>Ano {veiculo.ano} / {veiculo.km} km / {veiculo.combustivel}</p>               
-                </li>
-              ))}
-            </ul>
-        </div>
+                    <h3> {Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(veiculo.valor)}</h3>
+                    
+                    <p>Ano {veiculo.ano} / {veiculo.km} km / {veiculo.combustivel}</p>               
+                  </li>
+              </ul>
+          </div>
+        ))}
       </section>
       
 
