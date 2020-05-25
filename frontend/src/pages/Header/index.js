@@ -26,9 +26,6 @@ export default function Header() {
       setVeiculos(response.data);
     })
   }, [id_logon]);
-
- 
-
   
   return (
     

@@ -63,8 +63,10 @@
 }
 
 /*INICIO DA AREA DE CARROS*/
-.container section.novidades{
-  width: 100%;
+section.novidades{
+  width: 98%;
+  height: 670px;
+  background-color:#c2c1b8;
 }
 
 .container section.novidades .single-car{
@@ -85,6 +87,7 @@
 
   .container section.novidades .single-car img{
     width: 100%;
+    max-height: 220px;
     margin-top: -5px;
   }
 
@@ -129,12 +132,12 @@
   section.contato form{
     width: 600px;
     height: 500px;
-    margin: 30px auto 0 auto;
-    background-color: #c2c1b8;
+    margin: 0 auto;
+    background-color: #212121;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
-    color: #212121;
+    border-radius: 10px;
   }
 
   .form-wraper{
@@ -152,7 +155,7 @@
   }
   .form-wraper span{
     font-size: 24px;
-    color: #212121;
+    color: #c2c1b8;
   }
   .form-wraper input[type=text]{
     width: 100%;
@@ -179,9 +182,10 @@
     width: 120px;
     height: 35px;
     border: 0;
-    background-color: #212121;
+    background-color: #c2c1b8;
     color: white;
     cursor: pointer;
+    border-radius: 20px;
   }
 
   section.footer{
