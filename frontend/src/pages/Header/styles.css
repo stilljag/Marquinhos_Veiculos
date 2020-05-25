@@ -61,10 +61,14 @@ section.novidades{
     cursor: pointer;
     list-style: none;
   }
+<<<<<<< HEAD
   .container section.novidades .single-car ul li {
     
 
   }
+=======
+  
+>>>>>>> 9e98a26442bd4d10400972829c0e9735e5a4d861
 
 
   .container section.novidades .single-car h3{
