@@ -6,7 +6,8 @@ import api from '../../services/api';
 
 import './styles.css';
 
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/logo.jpg';
+import perfilImg from '../../assets/WhatsApp Image 2020-05-25 at 14.18.44.jpeg';
 
 export default function Profile() {
   const [veiculos, setVeiculos] = useState([]);  
@@ -45,14 +46,20 @@ export default function Profile() {
   }
 
   return (
+    <div className="container">
+      <section className="form" id="home">
+        <div className="header">
+          <img src={logoImg} alt="Marquinhos Veículos"/>
+        </div>
+      </section> 
     <div className="profile-container">
       <header>
-        <img src={logoImg} alt="Be the Hero" />
-        <span>Bem vindo , {name}</span>
+        <img src={perfilImg} alt="Marquinhos Veiculos" />
+        <span>Bem vindo, {name}</span>
 
         <Link className="button" to="/incidents/new">Cadastrar novo veículo</Link>
         <button onClick={handleLogout} type="button">
-          <FiPower size={18} color="#E02041" />
+          <FiPower size={18} color="#212121" />
         </button>
       </header>
 
@@ -99,5 +106,7 @@ export default function Profile() {
         ))}
       </ul>
     </div>
+    <section className="footer" id="contato"></section>
+  </div>
   );
 }

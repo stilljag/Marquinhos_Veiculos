@@ -5,7 +5,8 @@ import api from '../../services/api';
 
 import './styles.css';
 
-import logoImg from '../../assets/logo.jpg';
+import logoImg from '../../assets/WhatsApp Image 2020-05-25 at 14.18.44.jpeg';
+import headerImg from '../../assets/logo.jpg';
 
 export default function NewIncident() {  
   const [fabricante, setFabricante] = useState('');
@@ -64,81 +65,90 @@ export default function NewIncident() {
   }
 
   return (
-    <div className="new-incident-container">
-      <div className="content">
-        <section>
-          <img src={logoImg} alt="Marquinhos Veículos"/>
+    <div className="container">
+      <section className="form" id="home">
+        <div className="header">
+          <img src={headerImg} alt="Marquinhos Veículos"/>
+        </div>
+      </section> 
+      <div className="new-incident-container">
+        <div className="content">
+          <section className="logo">
+            <img src={logoImg} alt="Marquinhos Veículos"/>
 
-          <h1>Cadastre seus novos veículos</h1>
+            <h1>Cadastre seus novos veículos</h1>
 
-        </section>
+          </section>
 
-        <form onSubmit={handleNewIncident}>
-          <input 
-            placeholder="Fabricante"
-            value={fabricante}
-            onChange={e => setFabricante(e.target.value)}
-          />
+          <form onSubmit={handleNewIncident}>
+            <input 
+              placeholder="Fabricante"
+              value={fabricante}
+              onChange={e => setFabricante(e.target.value)}
+            />
 
-          <input 
-            placeholder="Modelo"
-            value={modelo}
-            onChange={e => setModelo(e.target.value)}
-          />
+            <input 
+              placeholder="Modelo"
+              value={modelo}
+              onChange={e => setModelo(e.target.value)}
+            />
 
-          <input className="w50"
-            placeholder="Placa"
-            value={placa}
-            onChange={e => setPlaca(e.target.value)}
-          />
+            <input className="w50"
+              placeholder="Placa"
+              value={placa}
+              onChange={e => setPlaca(e.target.value)}
+            />
 
-          <input className="w50"
-            placeholder="Combustível"
-            value={combustivel}
-            onChange={e => setCombustivel(e.target.value)}
-          />
+            <input className="w50"
+              placeholder="Combustível"
+              value={combustivel}
+              onChange={e => setCombustivel(e.target.value)}
+            />
 
-          <input 
-            placeholder="Estado"
-            value={estado}
-            onChange={e => setEstado(e.target.value)}
-          />
+            <input 
+              placeholder="Estado"
+              value={estado}
+              onChange={e => setEstado(e.target.value)}
+            />
 
-          <input className="w50"
-            placeholder="Portas"
-            value={portas}
-            onChange={e => setPortas(e.target.value)}
-          />
+            <input className="w50"
+              placeholder="Portas"
+              value={portas}
+              onChange={e => setPortas(e.target.value)}
+            />
 
-          <input className="w50"
-            placeholder="Valor"
-            value={valor}
-            onChange={e => setValor(e.target.value)}
-          />
+            <input className="w50"
+              placeholder="Valor"
+              value={valor}
+              onChange={e => setValor(e.target.value)}
+            />
 
-          <input className="w50"
-            placeholder="Ano"
-            value={ano}
-            onChange={e => setAno(e.target.value)}
-          />
+            <input className="w50"
+              placeholder="Ano"
+              value={ano}
+              onChange={e => setAno(e.target.value)}
+            />
 
-          <input className="w50"
-            placeholder="kilometragem"
-            value={km}
-            onChange={e => setKm(e.target.value)}
-          />                    
+            <input className="w50"
+              placeholder="kilometragem"
+              value={km}
+              onChange={e => setKm(e.target.value)}
+            />                    
 
-          <textarea
-            placeholder="Observações"
-            value={obs}
-            onChange={e => setObs(e.target.value)}
-          />
-         
-          <button className="button" type="submit">Cadastrar</button>
+            <textarea
+              placeholder="Observações"
+              value={obs}
+              onChange={e => setObs(e.target.value)}
+            />
           
+            <button className="button" type="submit">Cadastrar</button>
+            
 
-        </form>
+          </form>
+        </div>
       </div>
+      <div className="clear"/>
+      <section className="footer" id="contato"></section>
     </div>
   )
 }

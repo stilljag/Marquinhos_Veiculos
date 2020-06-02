@@ -21,7 +21,7 @@ body {
 }
 
 .container section.form .header img{
-  width: 120px;
+  width: 150px;
   height: 100px;
   float: left;
   cursor: pointer;
@@ -62,7 +62,7 @@ button {
 
 form input {
   width: 100%;
-  height: 60px;
+  height: 30px;
   color: #333;
   border: 1px solid #dcdce6;
   border-radius: 8px;

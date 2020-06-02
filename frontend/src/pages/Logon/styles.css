@@ -4,7 +4,7 @@
 
 .logo-container{
   width: 70%;
-  height: 339px;
+  height: 386px;
   align-items: center;
 }
 
@@ -16,6 +16,10 @@
 .classe form{
   float: left;
   width: 50%;
+}
+
+.classe form input{
+  height: 60px;
 }
 
 form h1{
