@@ -4,7 +4,7 @@
 [![NPM Version][npm-image]][npm-url]
 [![NODE Version][node-image]][node-url]
 [![REACT Version][react-image]][react-url]
-[![The MIT License](https://img.shields.io/badge/LICENSE-MIT-green.svg?style=flat-square)](http://github.com/stilljag/marquinhos_veiculos/LICENSE.md)
+[![The MIT License](https://img.shields.io/badge/LICENSE-MIT-green.svg?style=flat-square)](http://github.com/stilljag/marquinhos_veiculos/blob/master/LICENSE.md)
 
 Este é um projeto inicial para revenda Marquinhos Veículos.
 
