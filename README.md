@@ -5,6 +5,7 @@
 [![NODE Version][node-image]][node-url]
 [![REACT Version][react-image]][react-url]
 
+Este é um projeto inicial para revenda Marquinhos Veículos.
 
 <img alt="marquinhos_veiculos" align="center" src="./frontend/src/assets/marquinhosveiculos.jpg" width="340" height=200; />
 
