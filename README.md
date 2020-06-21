@@ -4,6 +4,7 @@
 [![NPM Version][npm-image]][npm-url]
 [![NODE Version][node-image]][node-url]
 [![REACT Version][react-image]][react-url]
+[![The MIT License](https://img.shields.io/badge/LICENSE-MIT-green.svg?style=flat-square)](http://github.com/stilljag/marquinhos_veiculos/LICENSE.md)
 
 Este é um projeto inicial para revenda Marquinhos Veículos.
 
@@ -45,6 +46,10 @@ Luciano Ferreira - [@LucianoFerreira](https://github.com/Ferreira94) – hablom5
 3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
 5. Crie um novo _Pull Request_
+
+### Licença
+
+Este projeto é desenvolvido sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para saber mais detalhes.
 
 [npm-image]:https://img.shields.io/badge/NPM-V6.14.5-brightgreen
 [npm-url]: https://www.npmjs.com/package/npm
