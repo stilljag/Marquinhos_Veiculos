@@ -4,7 +4,7 @@
 [![NPM Version][npm-image]][npm-url]
 [![NODE Version][node-image]][node-url]
 [![REACT Version][react-image]][react-url]
-[![The MIT License](https://img.shields.io/badge/LICENSE-MIT-green.svg?style=flat-square)](http://github.com/stilljag/marquinhos_veiculos/blob/master/LICENSE.md)
+[![The MIT License](https://img.shields.io/badge/LICENSE-MIT-green.svg?style=flat-square)](http://github.com/william-ribeiro/marquinhos_veiculos/blob/master/LICENSE.md)
 
 Este é um projeto inicial para revenda Marquinhos Veículos.
 
@@ -41,7 +41,7 @@ Luciano Ferreira - [@LucianoFerreira](https://github.com/Ferreira94) – hablom5
 
 ## Contributing
 
-1. Faça o _fork_ do projeto (<https://github.com/stilljag/marquinhos_veiculos/fork>)
+1. Faça o _fork_ do projeto (<https://github.com/william-ribeiro/marquinhos_veiculos/fork>)
 2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
 3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
